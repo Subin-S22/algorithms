@@ -6,5 +6,5 @@ export enum COMP {
 
 export default function compare(a: number, b: number) {
   if (a === b) return COMP.EQUAL;
-  a < b ? COMP.LESSER : COMP.GREATER;
+  return a < b ? COMP.LESSER : COMP.GREATER;
 }

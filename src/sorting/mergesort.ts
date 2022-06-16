@@ -15,7 +15,7 @@ function mergeSort(arr: Array<number>) {
 function merge(left: Array<number>, right: Array<number>) {
   let i = 0;
   let j = 0;
-  const result = [];
+  const result: number[] = [];
   while (i < left.length && j < right.length) {
     result.push(
       help.compare(left[i], right[j]) === help.COMP.LESSER
